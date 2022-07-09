@@ -8,7 +8,9 @@ const CircleArray = [];
 const gradientCircle = canvas.createLinearGradient(0, 0, 0, HEIGHT);
 
 for (let i = 0; i <= 10; i++) {
-  if (i % 2 == 0) {
+  if (i == 5) {
+    gradientCircle.addColorStop(i / 10, 'aqua');
+  } else if (i % 2 == 0) {
     gradientCircle.addColorStop(i / 10, '#EB1D36');
   } else {
     gradientCircle.addColorStop(i / 10, '#0F0E0E');
