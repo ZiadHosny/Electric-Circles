@@ -11,9 +11,9 @@ for (let i = 0; i <= 10; i++) {
   if (i == 5) {
     gradientCircle.addColorStop(i / 10, 'aqua');
   } else if (i % 2 == 0) {
-    gradientCircle.addColorStop(i / 10, '#EB1D36');
+    gradientCircle.addColorStop(i / 10, 'red');
   } else {
-    gradientCircle.addColorStop(i / 10, '#0F0E0E');
+    gradientCircle.addColorStop(i / 10, 'black');
   }
 }
 
@@ -24,9 +24,9 @@ const background = () => {
     if (i == 5) {
       gradientBackground.addColorStop(i / 10, 'aqua');
     } else if (i % 2 == 0) {
-      gradientBackground.addColorStop(i / 10, '#0F0E0E');
+      gradientBackground.addColorStop(i / 10, 'black');
     } else {
-      gradientBackground.addColorStop(i / 10, '#EB1D36');
+      gradientBackground.addColorStop(i / 10, 'red');
     }
   }
 
@@ -44,11 +44,11 @@ const backgroundRadialGradient = () => {
     30
   );
 
-  for (let i = 0; i <= 10; i++) {
+  for (let i = 1; i <= 10; i++) {
     if (i % 2 == 0) {
       BackgroundRadialGradient.addColorStop(i / 10, 'aqua');
     } else {
-      BackgroundRadialGradient.addColorStop(i / 10, '#0F0E0E');
+      BackgroundRadialGradient.addColorStop(i / 10, 'black');
     }
   }
 
