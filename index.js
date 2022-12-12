@@ -1,4 +1,5 @@
 document.querySelector('body').style.margin = 0;
+document.querySelector('body').style.overflow = 'hidden'
 const canvasDOM = document.querySelector('canvas');
 const WIDTH = (canvasDOM.width = innerWidth);
 const HEIGHT = (canvasDOM.height = innerHeight);
